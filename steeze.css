@@ -17,17 +17,24 @@ h3 {
     margin-top: 100px;
 }
 
-ul {
+.navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: antiquewhite;
 }
+
+.drop li {
+    font-size: 20px;
+    text-align: left;
+}
   
-li {
+.navBar li {
     float: left;
 }
+
+
   
 li a, .dropbtn {
     display: inline-block;
