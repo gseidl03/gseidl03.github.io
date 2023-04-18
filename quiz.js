@@ -154,6 +154,7 @@ function checkForAnswer() {
             //set to delay question number till when next question loads
             setTimeout(() => {
                 questionNumber++
+                document.getElementById("prog").value += 10;
             }, 1000)
         }
 
@@ -166,6 +167,7 @@ function checkForAnswer() {
             //set to delay question number till when next question loads
             setTimeout(() => {
                 questionNumber++
+                document.getElementById("prog").value += 10;
             }, 1000)
         }
     })
