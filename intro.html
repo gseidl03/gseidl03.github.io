@@ -3,42 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="steeze.css">
-        <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        // Get the modal
+          var modal = document.getElementById("myModal");
+        // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+        // When the user opens page, open the modal 
+          window.onload = function() {
+            modal.style.display = "block";
+          }
+        // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+        // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script> 
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
         <title>Bolognese Cooking Guide</title>
     </head>
     <body style = "background-color: antiquewhite;">
       <!-- The Modal -->
       <div id="myModal" class="modal fade in">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div id = "mymodal" class="modal-content">
           <span class="close">&times;</span>
           <h2 style = "color: crimson; text-align: center;">!ATTENTION!</h2>
-          <p style = "font-size: 18pt">This website is for academic purposes only! All credit goes to Binging with Babsish. 
+          <p style = "font-size: 18pt">This website is for academic purposes only! All credit goes to Binging with Babish. 
             Original recipe website can be found <a href = "https://basicswithbabish.co/basicsepisodes/bolognese">here</a>.</p>
         </div>
       </div>
 
       <script>
         // Get the modal
-        var modal = document.getElementById("myModal");
+          var modal = document.getElementById("myModal");
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+          var span = document.getElementsByClassName("close")[0];
         // When the user opens page, open the modal 
-        window.onload = function() {
-          modal.style.display = "block";
-        }
+          window.onload = function() {
+            modal.style.display = "block";
+          }
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
+          span.onclick = function() {
             modal.style.display = "none";
           }
-        }
-      </script>
+        // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
         
       <ul class = "navBar">
           <li><a href="intro.html">Introduction</a></li>
@@ -80,7 +100,7 @@
 
       <div class="container-fluid mt-3">
         <button class="myButtons" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style = "right: 950pt">
-          <p style = "font-size: 10pt" Recipes>Additional Recipes</p>
+          <p style = "font-size: 10pt">Additional Recipes</p>
         </button>
       </div>
       
