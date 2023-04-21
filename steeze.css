@@ -17,6 +17,7 @@ h3 {
     margin-top: 100px;
     position: relative; 
     bottom: 20px;
+    right: 5px;
 }
 
 .navBar {
@@ -109,7 +110,7 @@ li.dropdown {
 
   /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -215,4 +216,84 @@ padding: 16px;
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
+}
+
+.offcanvas {
+    position:fixed;
+    bottom:0;
+    z-index:1050;
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+    visibility:hidden;
+    background-color:#fff;background-clip:padding-box;
+    outline:0;
+    transition:transform .3s ease-in-out;
+}
+@media (prefers-reduced-motion:reduce) {
+    .offcanvas{transition:none}
+}
+
+.offcanvas-header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1rem 1rem
+}
+
+.offcanvas-header .btn-close {
+    padding:.5rem .5rem;
+    margin-top:-.5rem;
+    margin-right:-.5rem;
+    margin-bottom:-.5rem
+}
+
+.offcanvas-title {
+    margin-bottom:0;
+    line-height:1.5
+}
+
+.offcanvas-body {
+    flex-grow:1;
+    padding:1rem 1rem;
+    overflow-y:auto
+}
+
+.offcanvas-start {
+    top:0;
+    left:0;
+    width:400px;
+    border-right:1px solid rgba(0,0,0,.2);
+    transform:translateX(-100%)
+}
+
+.offcanvas-end {
+    top:0;
+    right:0;
+    width:400px;
+    border-left:1px solid rgba(0,0,0,.2);
+    transform:translateX(100%)
+} 
+
+.offcanvas-top {
+    top:0;
+    right:0;
+    left:0;
+    height:30vh;
+    max-height:100%;
+    border-bottom:1px solid rgba(0,0,0,.2);
+    transform:translateY(-100%)
+}
+
+.offcanvas-bottom {
+    right:0;
+    left:0;
+    height:30vh;
+    max-height:100%;
+    border-top:1px solid rgba(0,0,0,.2);
+    transform:translateY(100%)
+}
+
+.offcanvas.show {
+    transform:none
 }
