@@ -1,3 +1,4 @@
+<!--Bootstrap elements copied from https://www.w3schools.com/ and https://getbootstrap.com/-->
 <!DOCTYPE HTML>
 <html len = "eng">
   <head>
@@ -22,6 +23,7 @@
           modal.style.display = "none";
         }
       }
+
     </script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script> 
     <title>Bolognese Cooking Guide</title>
@@ -59,7 +61,8 @@
         }
       </script>
       
-    <ul class = "navBar">
+    <!--Navbar created using list elements and CSS-->
+      <ul class = "navBar">
       <li><a href="intro.html">Introduction</a></li>
       <li><a href="ingredients.html">Ingredients</a></li>
       <li class="dropdown">
@@ -72,12 +75,16 @@
       </li>
       <li><a href = "quiz.html">Quiz</a></li>
     </ul>
+
+    <!--Container for card element-->
     <div class="card">
       <img src="img_avatar.png" alt="Avatar" style="width:100%">
       <div class="container">
         <a href = "https://www.youtube.com/@babishculinaryuniverse">Binging with Babish's YouTube</a> 
       </div>
     </div>
+
+
     <h1 style = "text-align: center;">How to make Bolognese</h1>
     <p style = "font-size: 10px; font-style: italic; text-align: center;">*This project is purely for educational purposes, all credit goes to Binging with Babish*</p>
     <iframe class = "center" width="560" height="400" src="https://www.youtube.com/embed/vTEi5FFxMuE" 
@@ -92,7 +99,7 @@
     <h3>Cooktime: 3 hour 45 minutes, Active: 60 minutes</h3>
     <h3>Total: 3 hours 55 minutes</h3>
 
-
+    <!--Container for offcanvas element-->
     <div class="offcanvas offcanvas-bottom" id="demo">
       <div class="offcanvas-header">
         <h1 class="offcanvas-title">Other Recipes:</h1>
@@ -106,12 +113,13 @@
       </div>
     </div>
 
+    <!--Button to toggle offcanvas-->
     <button type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" 
     style = "width: 100px; height: 45px; float: left; position: relative; top: 100px;">
       <p style = "font-size: 9pt; padding-bottom: 10px;" >Additional Recipes</p>
     </button>
     
-    
+    <!--Next page button-->
     <button onclick = "window.location.href = 'https:\/\/gseidl03.github.io/ingredients.html'" 
       type = "button" class = "myButtons">Next</button>
   </body>
