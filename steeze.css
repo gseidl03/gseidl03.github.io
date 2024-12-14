@@ -1,0 +1,134 @@
+img {
+    position: static;
+    border: 15px solid ghostwhite;
+    position: static;
+    max-width: 100%;
+    max-height: auto;
+    margin: 5px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+}
+
+p {
+    max-width: 40%; 
+    font-size: 25px; 
+    margin-right: 10%;
+    font-family: Baskerville, serif;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.front-page {
+    display: flex;
+    width: auto;
+    height: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: column;
+}
+
+.slideshow-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 48rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -50px;
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-right: 15%;  
+  margin-left: auto;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    margin-left: 15%;
+    margin-right: auto;
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.desc {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-family: Baskerville, serif;
+    font-weight: 500;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
+
+.navBar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.push {
+    margin-left: auto;
+}
+  
+div a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Baskerville, serif;
+}
+
+.name {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: 450;
+    font-family: Baskerville, serif;
+}
+  
+#nav :hover {
+    background-color: cornflowerblue;
+}
